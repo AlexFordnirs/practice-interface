@@ -1,7 +1,9 @@
 package org.itstep;
 
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) {
-        // Пишите ваш код здесь
+        Scanner scanner = new Scanner(System.in);
     }
 }
