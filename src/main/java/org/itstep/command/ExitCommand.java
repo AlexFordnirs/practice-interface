@@ -1,4 +1,4 @@
-package org.itstep.comand;
+package org.itstep.command;
 
 public class ExitCommand implements Command {
     @Override

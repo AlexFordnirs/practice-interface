@@ -1,6 +1,6 @@
 package org.itstep;
 
-import org.itstep.comand.TestComand;
+import org.itstep.command.TestComand;
 
 import java.util.Scanner;
 
