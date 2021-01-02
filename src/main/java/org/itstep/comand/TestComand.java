@@ -2,8 +2,8 @@ package org.itstep.comand;
 
 public class TestComand {
     private Command command;
-
-    public void TestComand(String str) {
+    public String tok;
+    public void TestComanda (String str) {
         switch (str) {
             case "help":
                 command = new Help();
@@ -23,5 +23,7 @@ public class TestComand {
         }
 
     }
-     public  Command returnComand(){return command;}
+     public  Command returnComand(){
+         TestComanda(tok);
+        return command;}
 }
