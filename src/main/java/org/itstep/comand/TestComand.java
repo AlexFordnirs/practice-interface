@@ -6,19 +6,19 @@ public class TestComand {
     public void TestComanda (String str) {
         switch (str) {
             case "help":
-                command = new Help();
+                command = new HelpCommand();
                 break;
             case "echo":
-                command = new Echo();
+                command = new EchoCommand();
                 break;
             case "now":
-                command = new Now();
+                command = new NowCommand();
                 break;
             case "exit":
-                command = new Exit();
+                command = new ExitCommand();
                 break;
             default:
-                command = new Eror();
+                command = new ErorrCommand();
                 break;
         }
 
