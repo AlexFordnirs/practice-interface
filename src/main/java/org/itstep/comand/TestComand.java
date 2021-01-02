@@ -3,24 +3,25 @@ package org.itstep.comand;
 public class TestComand {
     private Command command;
 
-    public static TestComand convert(String str){
-        switch (str){
+    public void TestComand(String str) {
+        switch (str) {
             case "help":
-                  Help();
+                command = new Help();
                 break;
             case "echo":
-                  Echo();
+                command = new Echo();
                 break;
             case "now":
-                  Now();
+                command = new Now();
                 break;
             case "exit":
-                  Exit();
+                command = new Exit();
                 break;
             default:
-                  Eror();
+                command = new Eror();
                 break;
-
         }
+
     }
+     public  Command returnComand(){return command;}
 }
